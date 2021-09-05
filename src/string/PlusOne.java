@@ -7,7 +7,7 @@ package string;
  */
 public class PlusOne {
 
-    public static void main4(String[] args) {
+    public static void main(String[] args) {
         //int[] digits = {1,2,3};
         //int[] digits = {9,9,9};
         //int[] digits = {8,9,9};

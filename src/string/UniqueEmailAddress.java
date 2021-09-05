@@ -13,7 +13,7 @@ import java.util.Set;
  */
 public class UniqueEmailAddress {
 
-    public static void main1(String[] args){
+    public static void main(String[] args){
         UniqueEmailAddress a = new UniqueEmailAddress();
         String[] emails = {
                 "test.email+james@coding.com",

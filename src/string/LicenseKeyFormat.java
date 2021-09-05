@@ -8,7 +8,7 @@ package string;
  */
 public class LicenseKeyFormat {
 
-    public static void main3(String[] args) {
+    public static void main(String[] args) {
         //String str = "8F3Z-2e-9-w";
         String str = "8fedg-2EF-90dd-asdfkle";
         //String str = " 8-5g-3-J ";

@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class JewelsAndStones {
 
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
         String jewels = "aA", stones = "aAAbbbb";
         System.out.println("돌에 박힌 보석의 개수는 " + solve(jewels, stones));
     }
