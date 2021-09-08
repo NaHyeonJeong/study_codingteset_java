@@ -31,10 +31,9 @@ public class LicenseKeyFormat {
         System.out.println("newStr = " + newStr);
         int len = sb.length();
 
-        //끝에서부터 0까지 가면서 4칸 마다 '-'를 넣어야 함
         for(int i = k; i < len; i+=k){ // 4, 8, 12, ...
             System.out.println();
-            sb.insert(len - i, '-');
+            sb.insert(len - i, '-'); //끝에서부터 0까지 가면서 4칸 마다 '-'를 넣어야 함
             System.out.println("sb = " + sb);
         }
 

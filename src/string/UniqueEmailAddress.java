@@ -33,6 +33,7 @@ public class UniqueEmailAddress {
     public int solve1(String[] emails){
         // 1. data structure
         Set<String> set = new HashSet<>(); //중복 불가, 수정된 email 모음
+
         // 2. for while charAt()
         for(String email : emails){ //이메일들 별로
             String localName = makeLocalName(email);
@@ -52,10 +53,11 @@ public class UniqueEmailAddress {
     public int solve2(String[] emails){
         // 1. data structure
         Set<String> set = new HashSet<>();
+
         // 2. for while
         for(String email : emails){ //이메일들 별로
             //2-1 @ 기준으로 분리
-            String[] parts = email.split("@"); //@ 이전은 0번방 이후는 1번방에 나눠서 들어감
+            String[] parts = email.split("@"); //@ 이전은 0번방, 이후는 1번방에 나눠서 들어감
             //2-2 + 기준으로 분리
             String[] localName = parts[0].split("[+]");//+ 를 split 할 때는 [+] 해주거나 \\+ 해주거나
             //2-3 도메인의 '.'은 ""로 바꿔주고 로컬 + 도메인

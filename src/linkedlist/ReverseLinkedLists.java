@@ -1,5 +1,10 @@
 package linkedlist;
 
+/**
+ * Reverse LinkedList
+ *
+ * 단일 연결 리스트가 주어지면 그 값들을 역순으로 바꿔야 함
+ */
 class ListNode2{
     int val;
     ListNode2 next;
@@ -19,7 +24,7 @@ public class ReverseLinkedLists {
         printNode(head);
     }
 
-    public static ListNode2 reverseList(ListNode2 current){ //current 는 가장 맨 앞의 값을 가리키고 있음
+    public static ListNode2 reverseList(ListNode2 current){ //current 는 일단 가장 맨 앞의 값을 가리키고 있음
 
         //1. data sturcutre
         ListNode2 next = null;
@@ -27,9 +32,10 @@ public class ReverseLinkedLists {
 
         //2. for while
         while(current != null){
-            //current = 10을 기준으로 주석 작성
-            next = current.next; //current 의 next 가 가리키고 있던 부분들을(2n-30) next 라는 임시 변수에 넣어줌 (next = 2n-30)
-            current.next = prev; //current 의 next(0) 는 prev(n) 를 가리켜야 함(역순을 만들어줌) - (current = 1n으로 바뀜)
+            //current = 1null을 기준으로 주석 작성
+            next = current.next; //current 의 next 가 가리키고 있던 부분들을(2next-3null) next 라는 임시 변수에 넣어줌 (next = 2next-3null)
+            current.next = prev; //current 의 next(0) 는 prev(next) 를 가리켜야 함(역순을 만들어줌) - (current = 1n으로 바뀜)
+
             prev = current; //current 가 가리키던 값은 이제 prev 로 바뀌게 됨 (prev = 1n)
             current = next; //next 역할을 하고 있던 부분들을 current 로 바꿔줌 (current = 2n-30)
         }

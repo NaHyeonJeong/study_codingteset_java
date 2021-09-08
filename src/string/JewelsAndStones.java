@@ -26,9 +26,10 @@ public class JewelsAndStones {
     public static int solve(String jew, String stones){
         // 1. data structure
         Set<Character> set = new HashSet<>(); //대소문자 하나하나를 담아야 하기 때문에 Character
+
         // 2. for while
         //보석을 분리해서 따로 저장해둬야 돌에서 비교하기 쉬워짐
-        char[] charArr = jew.toCharArray();
+        char[] charArr = jew.toCharArray(); //문자열을 문자로 다 쪼갬
         for(int i = 0; i < charArr.length; i++){
             set.add(charArr[i]); // a, A
         }

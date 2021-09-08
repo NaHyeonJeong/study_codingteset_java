@@ -19,7 +19,7 @@ public class KthLargest {
         int k2 = 4; //4번째로 큰 값을 찾기
 
         System.out.println(k + "번째로 큰 값은 = " + kl.solve(nums, k));
-        System.out.println(k + "번째로 큰 값은 = " + kl.solve_pq(nums2, k2));
+        System.out.println(k2 + "번째로 큰 값은 = " + kl.solve_pq(nums2, k2));
     }
 
     /**
@@ -49,9 +49,9 @@ public class KthLargest {
         for(int i : nums){
             pq.offer(i); //queue에 값을 다 넣는다
             if(pq.size() > k){ //다 넣을 필요 없이 k개 만큼만 유지함(위에 가장 작은 값이 있게 됨)
-                pq.poll(); //가장 위의 값을 날림
+                pq.poll(); //큰 값이 나올때 까지 가장 앞의 값을 삭제
             }
         }
-        return pq.peek();
+        return pq.peek(); //가장 뒤에 있는 값이 큰 값
     }
 }
