@@ -5,6 +5,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * 이진 트리 레벨 순서 순회
+ *
+ * 이진 트리가 주어지면 노드 ㄱ밧의 레벨 순서 순회를 반환함
+ * 이진 트리의 값들을 큐에 넣어서 하나씩 빼고(FIFO) 각 레벨별로 list 로 묶어서 다시 list 에 넣는 문제
+ *
+ * Queue의 FIFO 성질을 이용해서 이진 트리의 레벨 순회 가능
+ */
 class TreeNode{
     int val;
     TreeNode left, right;
