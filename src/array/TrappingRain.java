@@ -30,8 +30,8 @@ public class TrappingRain {
         for(int i = 1; i < len; i++){
             if(height[i] < max){
                 left[i] = max;
-            } else{
-                left[i] = height[i];
+            } else{//1->2 2->3
+                left[i] = height[i]; //새로운 max 값
                 max = height[i];
             }
         }

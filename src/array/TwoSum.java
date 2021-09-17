@@ -49,12 +49,12 @@ public class TwoSum {
 
         //1. data structure
         int[] result = new int[2];
-        Map<Integer, Integer> map = new HashMap<>(); //key = 배열안의 값 | val = 방번호
+        Map<Integer, Integer> map = new HashMap<>(); //key = 배열안의 값(14(16-2), 8(16-8), 5(16-11)) | val = 방번호
 
         //2. for + Map<>
         for(int i = 0; i < nums.length; i++){
             if(map.containsKey(nums[i])){
-                int val = map.get(nums[i]);
+                int val = map.get(nums[i]); //val가 뽑힘
                 result[0] = val + 1;
                 result[1] = i + 1;
             } else{

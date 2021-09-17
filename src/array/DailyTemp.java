@@ -67,11 +67,11 @@ public class DailyTemp {
 
         //2. for-for
         for(int i = 0; i < length; i++){
-            while(!stack.isEmpty() && tem[stack.peek()] < tem[i]){
+            while(!stack.isEmpty() && tem[stack.peek()] < tem[i]){ //73vs74
                 int index = stack.pop();
-                result[index] = i - index;
+                result[index] = i - index; //1-0
             }
-            stack.push(i);
+            stack.push(i); //0-73
         }
 
         return result;
